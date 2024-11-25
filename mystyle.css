@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: rgb(21, 110, 90);
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+nav,
+.navlinks {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    border-bottom: 2px solid rgb(21, 110, 90);
+}
+
+.navlinks {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: rgb(21, 110, 90);
+}
+
+.navlinks a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Hamburger Navbar */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburgermenu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburgericon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburgericon i {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(21, 110, 90);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-pic {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section-pic img {
+    border-radius: 10rem;
+}
+
+.profile-text {
+    align-self: center;
+    text-align: center;
+}
+
+.profile-text p {
+    font-weight: 600;
+}
+
+.profile-p1 {
+    text-align: center;
+}
+
+.profile-p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color:rgb(21, 110, 90) ;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+button {
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+button a{
+    color: black;
+    text-decoration: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(21, 110, 90);
+}
+button a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* about */
+.about-class{
+    display: flex;
+    justify-content: center;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+}
+.about-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.edp1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.about-det {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.experience, .education {
+    border: 3px solid rgb(21, 110, 90);
+    border-radius: 3rem;
+    height: auto;
+    width: 23rem;
+    padding: 1rem;
+}
+
+.experience h2, .education h2 {
+    text-align: center;
+    color: rgb(21, 110, 90);
+    margin-bottom: 1rem;
+}
+
+.experience p, .education p {
+    text-align: center;
+    color: black;
+}
+
+.experience .exp1, .education .edp1 {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.experience .exp2, .education .edp2 {
+    color: black;
+}
+
+.experience .exp2 span, .education .edp2 span {
+    font-size: small;
+}
+
+/* skills */
+#skills{
+    margin-top: 5rem ;
+}
+.skill-class{
+    display: flex;
+    justify-content: center;
+}
+.skilltag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+
+.skill-points, .skill-points2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.html {
+    text-align: center;
+}
+
+
+.skill-points img, .skill-points2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+.skill-points h4, .skill-points2 h4 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.skill-points p, .skill-points2 p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* projects */
+
+#project {
+    margin-top: 5rem;
+}
+
+.pro-class {
+    display: flex;
+    justify-content: center;
+}
+
+.protag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+}
+
+.pro-imgs {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem; 
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.pro-img {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.pro-text {
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px; 
+}
+
+.image-container:hover .pro-text {
+    opacity: 1; 
+}
+.projectbtn:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(21, 110, 90);
+    border-color: rgb(21, 110, 90);
+}
+
+/* contact */
+.cont-class {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.conttag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 90%; 
+    max-width: 400px; 
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formh3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px; 
+}
+
+/* Input Box Styles */
+.inputbox {
+    position: relative;
+    width: 100%;
+}
+
+.inputbox {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #0f1111;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor:text;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.fbtnclass{
+    display: flex;
+    justify-content: center;
+}
+#formbtn{
+    width: 10rem;
+    background-color: rgb(21, 110, 90) ;
+    color: white;
+    font-size: large;
+    border: none;
+}
+#formbtn:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* back to top */
+.panel1 {
+    margin-top: 2rem;
+    background-color:rgb(21, 110, 90) ;
+    color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel1 a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* fotter */
+
+.fnav ul{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.fnav ul li a{
+    margin-top: 1rem;
+    color:black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+
+}
+.fnav ul li a:hover{
+    color:  rgb(21, 110, 90);
+}
+.Bottom{
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>MY Portfolio</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">Huzair <span>Asim</span></div>
+        <div>
+            <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Huzair <span>Asim</span></div>
+        <div class="hamburgermenu">
+            <div class="hamburgericon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- name and img -->
+    <section id="profile">
+        <div class="section-pic">
+            <img src="pf.jpg" alt="My PFP" />
+        </div>
+        <div class="profile-text">
+            <p class="profile-p1">Hello, I'm</p>
+            <h1 class="title">Huzair Asim</h1>
+            <p class="profile-p2">Frontend Developer</p>
+            <div class="profile-btn">
+                <button class="cvbtn"><a href="huzair cv.jpg"> My CV</a></button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin logo.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/huzair-asim-68a3291a3/'" />
+                <img src="github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/huzairdhool'" />
+                <img src="mail logo.webp" alt="My Gmail account" class="icon"
+                    onclick="location.href='mailto:huzairdhool@gmail.com'" />
+                <img src="insta logo.jpeg" alt="My Insta" class="icon"
+                    onclick="location.href='https://www.instagram.com/huzair_asim/?next=%2F'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+
+    <section id="about">
+        <div class="about-class">
+            <h1 class="tag">About Me</h1>
+        </div>
+        <div class="about-div">
+            <p class="edp1">I am a skilled web developer focused on creating clean, user-friendly
+                websites.<br>Proficient in HTML, CSS, and JavaScript. Always eager to learn and adapt,<br> I enjoy
+                exploring new technologies and tools to keep my skills sharp and<br> my projects fresh.</p>
+        </div>
+        <div class="about-det">
+            <div class="experience">
+                <h2>Experience</h2>
+                <p class="exp1">Web Developer</p>
+                <p class="exp2">Fresh</p>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <p class="edp1">BS in Computer Science</p>
+                <p class="edp2">Superior College Gujrat <br><span>(2020-24)</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+        <div class="skill-class">
+            <h1 class="skilltag">Skills</h1>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-points">
+                <div class="html">
+                    <img src="html logo.png" alt="HTML Logo">
+                    <h4>HTML</h4>
+                    <p>Expert</p>
+                </div>
+                <div class="html">
+                    <img src="css logo.jpg" alt="CSS Logo">
+                    <h4>CSS</h4>
+                    <p>Expert</p>
+                </div>
+                <div class="html">
+                    <img src="js logo.png" alt="JavaScript Logo">
+                    <h4>JS</h4>
+                    <p>Basic</p>
+                </div>
+            </div>
+
+
+            <div class="skill-points2">
+                <div class="html">
+                    <img src="py logo.png" alt="Python Logo">
+                    <h4>Python</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="html">
+                    <img src="wp.png" alt="WordPress Logo">
+                    <h4>WordPress</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="html">
+                    <img src="rjs logo.png" alt="React.js Logo">
+                    <h4>React.js</h4>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="project">
+        <div class="pro-class">
+            <h1 class="protag">Projects</h1>
+        </div>
+
+        <div class="pro-imgs">
+
+            <div class="pro-img">
+                <div class="image-container">
+                    <img src="project-1.png" alt="Project-1">
+                    <div class="pro-text">
+                        <h3>Dhool Ceiling</h3>
+                        <p>A working Website for a Ceiling Company.</p>
+                    </div>
+                </div>
+                <button class="projectbtn" onclick="location.href='https://github.com/huzairdhool/project1'">
+                    GitHub
+                </button>
+            </div>
+            <div class="pro-img">
+                <div class="image-container">
+                    <img src="rps.jpg" alt="Project-2">
+                    <div class="pro-text">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>A game of Rock Paper and Scissors created <br>using HTML,CSS, and JS.</p>
+                    </div>
+                </div>
+                <button class="projectbtn"
+                    onclick="location.href='https://github.com/huzairdhool/Rock-paper-scissor-game.git'">
+                    GitHub
+                </button>
+            </div>
+
+            <div class="pro-img">
+                <div class="image-container">
+                    <img src="amazone clone.png" alt="Project-3">
+                    <div class="pro-text">
+                        <h3>Amazon Clone</h3>
+                        <p>An Amazon clone using only HTML and<br> CSS.</p>
+                    </div>
+                </div>
+                <button class="projectbtn" onclick="location.href='https://github.com/huzairdhool/amazon-clone.git'">
+                    GitHub
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="cont-class">
+            <h1 class="conttag">Contact Me</h1>
+        </div>
+        <div class="contact">
+            <form action="https://api.web3forms.com/submit" method="POST" class="formclass">
+                <div class="formh3">
+                    <h3>Get in touch</h3>
+                </div>
+                <input type="hidden" name="access_key" value="6eb4fa2d-046d-4c9a-87ac-e73f42732e9b">
+                <input type="text" name="name" placeholder="Your Name" class="inputbox" required="Required">
+                <input type="email" name="email" placeholder="Your EMAIL" class="inputbox" required="Required">
+                <textarea name="message" placeholder="Your Message" class="inputbox" required="Required"></textarea>
+                <div class="fbtnclass">
+                <button id="formbtn" type="submit">Submit</button></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- back to top -->
+
+    <div class="panel1">
+        <a href="#top">Back To Top</a>
+    </div>
+
+    <!-- end -->
+    <div class="fnav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="Bottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">Huzair Asim</span></p>
+    </div>
+
+
+
+
+    <!-- JS File -->
+    <script src="main.js"></script>
+</body>
+
+</html>
